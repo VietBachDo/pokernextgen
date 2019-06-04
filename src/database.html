@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="assets/css/vendor.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style2.css" />
+
+    <title>NextGen Database</title>
+
+  </head>
+
+
+  <body>
+
+    <!-- header -->
+    <header class="header header-sticky header-transparent">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-dark" >
+            <!-- nav bar logo -->
+            <a href="" class="navbar-brand"><img id="navbarLogo"src="assets/imgs/nextgen-poker.svg" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Explore the Database
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-1">
+                    <a class="dropdown-item" href="database.html#section-1">What is this thing?</a> <!-- should go to the top of the DB page -->
+                    <a class="dropdown-item" href="database.html#section-4">Results</a>
+                    <a class="dropdown-item" href="database.html#section-7">Search the Omaha Database</a>
+                    <a class="dropdown-item" href="database.html#section-9">Texas Hold'Em</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Explore the App
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-2">
+                    <a class="dropdown-item" href="app.html">Summary Tab</a>
+                    <a class="dropdown-item" href="app.html">Cash Games & Tournaments</a>
+                    <a class="dropdown-item" href="app.html">Reports</a>
+                    <a class="dropdown-item" href="app.html">Simulator</a>
+                    <a class="dropdown-item" href="app.html">Themes</a>
+                    <a class="dropdown-item" href="app.html">Currencies</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Platforms
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-3">
+                    <a class="dropdown-item" href="platforms.html#section-1">iOS</a>
+                    <a class="dropdown-item" href="platforms.html#section-2">Android</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                  </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="documentation/index.html">About</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- / header -->
+
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <!-- toc -->
+          <aside class="col-lg-3">
+            <div class="sticky sticky-with-header">
+              <button class="overlay-menu-open"></button>
+              <div class="overlay-menu boxed bg-dark text-white mb-3 mb-lg-0">
+                <ul id="page-nav" class="nav flex-column nav-vertical">
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#menu-1" role="button" aria-expanded="false" aria-controls="menu-1">Database</a>
+                      <div class="collapse" id="menu-1" data-parent="#page-nav">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#section-1">Version 1.0</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#section-2">A Simple Mapping</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#section-3">20,000 Tests per Data Point</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#menu-2" role="button" aria-expanded="false" aria-controls="menu-2">Results</a>
+                    <div class="collapse" id="menu-2" data-parent="#page-nav">
+                      <div>
+                        <ul class="nav flex-column">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#section-4">Equity vs Hand Rank</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#section-5">Results From Each Quartile</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#section-6">The Best, and the Worst</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#menu-3" role="button" aria-expanded="false" aria-controls="menu-3">Search</a>
+                    <div class="collapse" id="menu-3" data-parent="#page-nav">
+                      <div>
+                        <ul class="nav flex-column">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#section-7">Find a Hand</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#section-8">Find a Ranking</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#menu-4" role="button" aria-expanded="false" aria-controls="menu-4">Texas Hold'Em</a>
+                    <div class="collapse" id="menu-4" data-parent="#page-nav">
+                      <div>
+                        <ul class="nav flex-column">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#section-8">Coming Soon</a>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+          <!-- / toc -->
+
+
+          <!-- content -->
+          <article id="content" class="col-lg-7">
+
+            <h1 class="h2 font-weight-light">We <b>did the math</b> so you don't have to. Check it out.</h1>
+
+
+            <!-- database -->
+            <section id="section-1">
+              <h2 class="section-title">Version 1.0 <a data-scroll href="#section-1" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <p>This is the first version of the database.  We wrote code to test every single combination of an Omaha starting
+              hand against a random hand.  Next, version 2.0 will include Texas Hold'Em data.</p>
+              <br>
+              <div class="card card-showcase">
+                  <img class="card-img-top" src="assets/imgs/database.png" alt="Documentation Layout 1">
+              </div>
+            </section>
+            <!-- / database -->
+
+            <!-- colors -->
+            <section id="section-2">
+              <h2 class="section-title">A Simple Mapping <a data-scroll href="#section-2" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <p>Card 1 is the <span>2&clubs;</span>, and card 52 is the <span>A&spades;</span>.  A card has an index, <b>x</b>, a rank <b>z</b> and a suit <b>suit</b>.</p>
+              <br>
+              <div class="card card-showcase">
+                  <img class="card-img-top" src="assets/imgs/mapping.png" alt="Documentation Layout 1">
+              </div>
+            </section>
+            <!-- / colors -->
+
+
+            <!-- file tree -->
+            <section id="section-3">
+              <h2 class="section-title">20,000 Tests per Data Point <a data-scroll href="#section-3" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <p>There are 270,725 starting hands in Omaha.  That is 5,414,500,000 tests!  But still, we only explored < 10% of the hand space per data point.  The numbers started to settle after 10,000 trials, so we did 20,000.</p>
+              <p>We intend to rerun the simulation and define convergence or stop after 500,000 tests per data point.  Whichever comes first.
+            </section>
+            <!-- / file tree -->
+
+            <!-- graph -->
+            <section id="section-4">
+              <h2 class="section-title">A Graph <a data-scroll href="#section-2" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <p>The vertical red lines divide the chart into quartiles. These results are rather interesting as they appear to be a linear trasformation
+                of a <a href="https://en.wikipedia.org/wiki/Logistic_function" target="_blank">logistic curve</a>, something found throughout the natural world.</p>
+              <br>
+              <div class="card card-showcase">
+                  <img class="card-img-top" src="assets/imgs/graph.png" alt="Documentation Layout 1">
+              </div>
+            </section>
+            <!-- / graph -->
+
+
+            <!-- table -->
+            <section id="section-5">
+              <h2 class="section-title">Results From Each Quartile <a data-scroll href="#section-4" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <p>The worst hand we tested was 2<span>&clubs;</span> - 2<span style="color: red">&diams;</span> - 2<span style="color: red">&hearts;</span> - 2<span>&spades;</span>
+              And the top hand from each quartile.</p>
+              <div class="row">
+                <div class="col">
+                  <table class="table table-striped boxed">
+                    <thead>
+                      <tr>
+                        <th scope="col">Quartile</th>
+                        <th scope="col">card1</th>
+                        <th scope="col">card2</th>
+                        <th scope="col">card3</th>
+                        <th scope="col">card4</th>
+                        <th scope="col">Equity</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>T<span style="color: red">&diams;</span></td>
+                        <td>T<span style="color: red">&hearts;</span></td>
+                        <td>A<span style="color: red">&diams;</span></td>
+                        <td>A<span style="color: red">&hearts;</span></td>
+                        <td>72.41%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>4<span style="color: red">&diams;</span></td>
+                        <td>7<span>&spades;</span></td>
+                        <td>J<span style="color: red">&diams;</span></td>
+                        <td>Q<span>&spades;</span></td>
+                        <td>51.75%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>5<span>&spades;</span></td>
+                        <td>6<span>&spades;</span></td>
+                        <td>J<span>&spades;</span></td>
+                        <td>A<span>&clubs;</span></td>
+                        <td>47.85%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>4<span style="color: red">&diams;</span></td>
+                        <td>5<span style="color: red">&hearts;</span></td>
+                        <td>7<span style="color: red">&hearts;</span></td>
+                        <td>J<span style="color: red">&hearts;</span></td>
+                        <td>44.33%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <!-- / table -->
+
+
+            <!-- accordion -->
+            <section id="section-6">
+              <h2 class="section-title">The Best, and the Worst <a data-scroll href="#section-5" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <p>And the 10 hands in the middle.  The 10 best hands all have PF equity greater than 70% vs a random hand.  The hands in the middle are all a little worse than a coin flip vs a random hand.  And the 10 worst hands can expect to lose more than 70% of the time.</p>
+              <p>Here some interesting patterns emerge.  Double suited aces with a JJ or TT are the nuts.  Low quads and trip dueces with a mid
+                rank rainbow are the worst.  The worst hands are significantly worst than the best hands are good.
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="accordion accordion-card" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            The 10 Best
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col">
+                              <table class="table table-striped boxed">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Rank</th>
+                                    <th scope="col">card1</th>
+                                    <th scope="col">card2</th>
+                                    <th scope="col">card3</th>
+                                    <th scope="col">card4</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>T<span style="color: red">&diams;</span></td>
+                                    <td>T<span style="color: red">&hearts;</span></td>
+                                    <td>A<span style="color: red">&diams;</span></td>
+                                    <td>A<span style="color: red">&hearts;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>T<span style="color: red">&diams;</span></td>
+                                    <td>T<span >&spades;</span></td>
+                                    <td>A<span style="color: red">&diams;</span></td>
+                                    <td>A<span >&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>T<span>&clubs;</span></td>
+                                    <td>T<span style="color: red">&hearts;</span></td>
+                                    <td>A<span>&clubs;</span></td>
+                                    <td>A<span style="color: red">&hearts;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>J<span>&clubs;</span></td>
+                                    <td>J<span style="color: red">&diams;</span></td>
+                                    <td>A<span>&clubs;</span></td>
+                                    <td>A<span style="color: red">&diams;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>J<span style="color: red">&diams;</span></td>
+                                    <td>J<span style="color: red">&hearts;</span></td>
+                                    <td>A<span style="color: red">&diams;</span></td>
+                                    <td>A<span style="color: red">&hearts;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td>9<span>&spades;</span></td>
+                                    <td>T<span>&spades;</span></td>
+                                    <td>A<span>&clubs;</span></td>
+                                    <td>A<span>&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">7</th>
+                                    <td>K<span style="color: red">&diams;</span></td>
+                                    <td>K<span style="color: red">&hearts;</span></td>
+                                    <td>A<span style="color: red">&diams;</span></td>
+                                    <td>A<span style="color: red">&hearts;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">8</th>
+                                    <td>J<span>&clubs;</span></td>
+                                    <td>J<span style="color: red">&hearts;</span></td>
+                                    <td>A<span>&clubs;</span></td>
+                                    <td>A<span style="color: red">&hearts;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">9</th>
+                                    <td>T<span style="color: red">&diams;</span></td>
+                                    <td>T<span>&spades;</span></td>
+                                    <td>A<span style="color: red">&diams;</span></td>
+                                    <td>A<span>&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">10</th>
+                                    <td>Q<span style="color: red">&hearts;</span></td>
+                                    <td>Q<span>&spades;</span></td>
+                                    <td>A<span style="color: red">&hearts;</span></td>
+                                    <td>A<span>&spades;</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            The 10 in the Middle
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col">
+                              <table class="table table-striped boxed">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Rank</th>
+                                    <th scope="col">card1</th>
+                                    <th scope="col">card2</th>
+                                    <th scope="col">card3</th>
+                                    <th scope="col">card4</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">135358</th>
+                                    <td>4<span >&clubs;</span></td>
+                                    <td>6<span>&spades;</span></td>
+                                    <td>T<span style="color: red">&diams;</span></td>
+                                    <td>J<span>&clubs;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">135359</th>
+                                    <td>4<span>&clubs;</span></td>
+                                    <td>9<span style="color: red">&diams;</span></td>
+                                    <td>Q<span>&clubs;</span></td>
+                                    <td>K<span>&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">135360</th>
+                                    <td>6<span style="color: red">&hearts;</span></td>
+                                    <td>7<span>&clubs;</span></td>
+                                    <td>T<span>&spades;</span></td>
+                                    <td>K<span style="color: red">&diams;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">135361</th>
+                                    <td>7<span style="color: red">&hearts;</span></td>
+                                    <td>9<span style="color: red">&diams;</span></td>
+                                    <td>T<span>&clubs;</span></td>
+                                    <td>J<span>&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">135362</th>
+                                    <td>5<span>&spades;</span></td>
+                                    <td>6<span>&spades;</span></td>
+                                    <td>J<span>&spades;</span></td>
+                                    <td>A<span>&clubs;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">135363</th>
+                                    <td>4<span>&spades;</span></td>
+                                    <td>9<span>&spades;</span></td>
+                                    <td>J<span>&spades;</span></td>
+                                    <td>A<span>&clubs;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">135364</th>
+                                    <td>3<span style="color: red">&diams;</span></td>
+                                    <td>4<span style="color: red">&diams;</span></td>
+                                    <td>7<span style="color: red">&diams;</span></td>
+                                    <td>7<span style="color: red">&hearts;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">135365</th>
+                                    <td>2<span style="color: red">&hearts;</span></td>
+                                    <td>9<span>&spades;</span></td>
+                                    <td>H<span style="color: red">&diams;</span></td>
+                                    <td>K<span>&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">135366</th>
+                                    <td>3<span style="color: red">&diams;</span></td>
+                                    <td>3<span style="color: red">&hearts;</span></td>
+                                    <td>6<span style="color: red">&hearts;</span></td>
+                                    <td>K<span style="color: red">&diams;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">135367</th>
+                                    <td>2<span>&clubs;</span></td>
+                                    <td>8<span>&hearts;</span></td>
+                                    <td>J<span>&spades;</span></td>
+                                    <td>A<span>&spades;</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            The 10 Worst
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col">
+                              <table class="table table-striped boxed">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Rank</th>
+                                    <th scope="col">card1</th>
+                                    <th scope="col">card2</th>
+                                    <th scope="col">card3</th>
+                                    <th scope="col">card4</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">270,716</th>
+                                    <td>2<span>&clubs;</span></td>
+                                    <td>2<span style="color: red">&hearts;</span></td>
+                                    <td>2<span>&spades;</span></td>
+                                    <td>9<span>&clubs;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">270,717</th>
+                                    <td>2<span>&clubs;</span></td>
+                                    <td>2<span style="color: red">&diams;</span></td>
+                                    <td>2<span style="color: red">&hearts;</span></td>
+                                    <td>7<span>&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">270,718</th>
+                                    <td>2<span>&clubs;</span></td>
+                                    <td>2<span style="color: red">&hearts;</span></td>
+                                    <td>2<span>&spades;</span></td>
+                                    <td>8<span style="color: red">&diams;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">270,719</th>
+                                    <td>2<span>&clubs;</span></td>
+                                    <td>2<span style="color: red">&diams;</span></td>
+                                    <td>2<span>&spades;</span></td>
+                                    <td>7<span style="color: red">&hearts;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">270,720</th>
+                                    <td>2<span>&clubs;</span></td>
+                                    <td>2<span style="color: red">&diams;</span></td>
+                                    <td>2<span style="color: red">&hearts;</span></td>
+                                    <td>9<span>&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">270,721</th>
+                                    <td>5<span>&clubs;</span></td>
+                                    <td>5<span style="color: red">&diams;</span></td>
+                                    <td>5<span style="color: red">&hearts;</span></td>
+                                    <td>5<span>&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">270,722</th>
+                                    <td>2<span>&clubs;</span></td>
+                                    <td>2<span style="color: red">&hearts;</span></td>
+                                    <td>2<span>&spades;</span></td>
+                                    <td>7<span style="color: red">&diams;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">270,723</th>
+                                    <td>4<span>&clubs;</span></td>
+                                    <td>4<span style="color: red">&diams;</span></td>
+                                    <td>4<span style="color: red">&hearts;</span></td>
+                                    <td>4<span>&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">270,724</th>
+                                    <td>3<span>&clubs;</span></td>
+                                    <td>3<span style="color: red">&diams;</span></td>
+                                    <td>3<span style="color: red">&hearts;</span></td>
+                                    <td>3<span>&spades;</span></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">270,725</th>
+                                    <td>2<span>&clubs;</span></td>
+                                    <td>2<span style="color: red">&diams;</span></td>
+                                    <td>2<span style="color: red">&hearts;</span></td>
+                                    <td>2<span>&spades;</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- / accordion -->
+
+
+            <!-- video -->
+<!--             FOR BARKET TO FIX:
+              -form validation
+                -numbers should not be < 1 or > 270725 -->
+            <section id="section-7">
+              <h2 class="section-title">Find a Hand <a data-scroll href="#section-6" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <p>Enter a ranking, an integer greater than 0 and less than 270,726 and the site will return the corresponding hand</p>
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header no-border bg-white pb-0">
+                    <div class="card-body">
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                          <div class="form-group row">
+                            <label for="example-number-input" class="col-2 col-form-label">Rank</label>
+                              <div class="col-10">
+                                <div class="input-group">
+                                  <input class="form-control" type="number" value="42" id="example-number-input">
+                                    <div class="input-group-append">
+                                      <button type="button" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- / video -->
+
+
+            <section id="section-8">
+              <h2 class="section-title">Find a Ranking <a data-scroll href="#section-7" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <p>Enter a hand and we will return its ranking.</p>
+
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header no-border bg-white pb-0">
+                    <div class="card-body">
+
+                    <div class="row" id="append">
+                    </div>
+
+                      <br>
+
+                      <div class="row">
+                        <div class="owl-carousel owl-carousel-showcase owl-carousel-fluid" data-items="[3,2,1]" data-center="true" data-margin="30" data-nav="true" data-loop="true">
+                          <btn class='WTF' id='1' onClick="print_id(1)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/2_of_clubs.png" alt="Documentation Layout 1">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='5' onClick="print_id(5)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/3_of_clubs.png" alt="Documentation Layout 2">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='9' onClick="print_id(9)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/4_of_clubs.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='13' onClick="print_id(13)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/5_of_clubs.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='17' onClick="print_id(17)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/6_of_clubs.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='21' onClick="print_id(21)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/7_of_clubs.png" alt="Documentation Layout 1">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='25' onClick="print_id(25)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/8_of_clubs.png" alt="Documentation Layout 2">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='29' onClick="print_id(29)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/9_of_clubs.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='33' onClick="print_id(33)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/10_of_clubs.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='37' onClick="print_id(37)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/jack_of_clubs.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='41' onClick="print_id(41)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/queen_of_clubs.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='45' onClick="print_id(45)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/king_of_clubs.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='49' onClick="print_id(49)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/ace_of_clubs.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="owl-carousel owl-carousel-showcase owl-carousel-fluid" data-items="[3,2,1]" data-center="true" data-margin="30" data-nav="true" data-loop="true">
+                          <btn class='WTF' id='2' onClick="print_id(2)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/2_of_diamonds.png" alt="Documentation Layout 1">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='6' onClick="print_id(6)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/3_of_diamonds.png" alt="Documentation Layout 2">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='10' onClick="print_id(10)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/4_of_diamonds.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='14' onClick="print_id(14)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/5_of_diamonds.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='18' onClick="print_id(18)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/6_of_diamonds.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='22' onClick="print_id(22)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/7_of_diamonds.png" alt="Documentation Layout 1">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='26' onClick="print_id(26)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/8_of_diamonds.png" alt="Documentation Layout 2">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='30' onClick="print_id(30)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/9_of_diamonds.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='34' onClick="print_id(34)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/10_of_diamonds.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='38' onClick="print_id(38)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/jack_of_diamonds.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='42' onClick="print_id(42)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/queen_of_diamonds.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='46' onClick="print_id(46)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/king_of_diamonds.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='50' onClick="print_id(50)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/ace_of_diamonds.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="owl-carousel owl-carousel-showcase owl-carousel-fluid" data-items="[3,2,1]" data-center="true" data-margin="30" data-nav="true" data-loop="true">
+                          <btn class='card-btn-x' id='3' onClick="print_id(3)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/2_of_hearts.png" alt="Documentation Layout 1">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='7' onClick="print_id(7)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/3_of_hearts.png" alt="Documentation Layout 2">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='11' onClick="print_id(11)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/4_of_hearts.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='15' onClick="print_id(15)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/5_of_hearts.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='19' onClick="print_id(19)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/6_of_hearts.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='23' onClick="print_id(23)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/7_of_hearts.png" alt="Documentation Layout 1">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='27' onClick="print_id(27)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/8_of_hearts.png" alt="Documentation Layout 2">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='31' onClick="print_id(31)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/9_of_hearts.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='35' onClick="print_id(35)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/10_of_hearts.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='39' onClick="print_id(39)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/jack_of_hearts.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='43' onClick="print_id(43)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/queen_of_hearts.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='47' onClick="print_id(47)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/king_of_hearts.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='51' onClick="print_id(51)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/ace_of_hearts.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="owl-carousel owl-carousel-showcase owl-carousel-fluid" data-items="[3,2,1]" data-center="true" data-margin="30" data-nav="true" data-loop="true">
+                          <btn class='card-btn-x' id='4' onClick="print_id(4)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/2_of_spades.png" alt="Documentation Layout 1">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='8' onClick="print_id(8)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/3_of_spades.png" alt="Documentation Layout 2">
+                          </div>
+                          </btn>
+                          <btn class='card-btn-x' id='12' onClick="print_id(12)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/4_of_spades.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='16' onClick="print_id(16)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/5_of_spades.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='20' onClick="print_id(20)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/6_of_spades.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='24' onClick="print_id(24)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/7_of_spades.png" alt="Documentation Layout 1">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='28' onClick="print_id(28)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/8_of_spades.png" alt="Documentation Layout 2">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='32' onClick="print_id(32)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/9_of_spades.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='36' onClick="print_id(36)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/10_of_spades.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='40' onClick="print_id(40)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/jack_of_spades.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='44' onClick="print_id(44)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/queen_of_spades.png" alt="Changelog">
+                            </div>
+                          </btn>
+                          <btn class='card-btn-x' id='48' onClick="print_id(48)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/king_of_spades.png" alt="Documentation Layout 4">
+                            </div>
+                          </btn>
+                          <btn class='card-btn' id='52' onClick="print_id(52)">
+                            <div class="card card-showcase lift">
+                              <img class="card-img-top" src="assets/imgs/cards/ace_of_spades.png" alt="Helpcenter">
+                            </div>
+                          </btn>
+                        </div>
+                      </div>
+
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+
+
+            <!-- code -->
+            <!-- https://developer.snapappointments.com/bootstrap-select/examples/ -->
+<!--             <section id="section-8">
+              <h2 class="section-title">Find a Ranking <a data-scroll href="#section-7" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <p>Enter a hand and we will return its ranking.</p>
+
+              <div class="row">
+                <div class="col">
+                  <div class="accordion accordion-card">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Pick a Hand
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col">
+                              <div class="card">
+                                <div class="card-header no-border bg-white pb-0">
+                                  <div class="card-body">
+                                    <br>
+
+
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section> -->
+            <!-- / code -->
+
+            <!-- Texas Hold'Em -->
+            <section id="section-9">
+              <h2 class="section-title">Texas Hold'Em Database <a data-scroll href="#section-6" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <p>This is the next major simulation that we plan on running.  We will test each of the 1,326 starting hands in Texas Hold'Em 10,000
+              times which, assuming an even sampling, should explore the entire hand space more than 7.5 times.</p>
+            </section>
+            <!-- /Texas Hold'Em -->
+
+
+          </article>
+          <!-- / content -->
+
+
+          <!-- scroll indicator -->
+          <div class="col-lg-1 d-none d-lg-block">
+            <div class="sticky sticky-with-header text-right">
+              <div id="pageProgress" class="page-progress" data-anchor-target="#content">
+                <div data-anchor-target="#content" data-top-top="height:0%;" data-bottom-bottom="height:100%;"></div>
+              </div>
+            </div>
+          </div>
+          <!-- / scroll indicator -->
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- go top -->
+    <div class="half">
+      <span class="half-bg bg-dark"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="btn-frame">
+              <a data-scroll href="#top" class="btn btn-top btn-primary btn-ico btn-lg btn-rounded"><i class="icon-arrow-up2 fs-22"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / go top -->
+
+
+    <!-- footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row gutter-3">
+          <div class="col-12 col-md-2">
+            <a href=""><img id="footerLogo" src="assets/imgs/nextgen-poker.svg" alt="Logo"></a>
+          </div>
+          <div class="col-12 col-md-6 text-white">
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="row">
+              <div class="col">
+                <ul class="list-group list-group-minimal">
+                  <li class="list-group-item"><a href="" class="link">Product Help</a></li>
+                  <li class="list-group-item"><a href="" class="link">Training Videos</a></li>
+                  <li class="list-group-item"><a href="" class="link">Integrations</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="list-group list-group-minimal">
+                  <li class="list-group-item"><a href="" class="link">REST API</a></li>
+                  <li class="list-group-item"><a href="" class="link">Corporate</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 ml-auto text-md-right">
+            <div class="dropdown">
+              <button class="btn btn-inverted btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">French</a>
+                <a class="dropdown-item" href="#">German</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- / footer -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/app.js"></script>
+<!--
+    <script>
+      $(document).ready(function(){
+        console.log("TEST")
+
+
+      });
+    </script> -->
+
+
+<!--     <script>
+      $(document).ready(function(){
+
+        $('.card-btn-x').on('click', function(){
+          console.log($('.card-btn-x').attr('id'))
+        });
+
+      });
+
+    </script> -->
+
+<!--     <script>
+      var dict = {};
+      dict['1'] = ['2&clubs;', false];
+      dict['2'] = ['2<span style="color: red">&diams;</span>', false];
+      dict['3'] = ['2<span style="color: red">&hearts;</span>', false];
+      dict['4'] = ['2&spades;', false];
+      dict['5'] = ['2&clubs;', false];
+
+      var myArray = [];
+
+
+      function print_id(id){
+        console.log(id)
+
+        if(myArray.length < 4){
+
+          if(dict[id][1] == false){
+            dict[id][1] = true;
+            myArray.push(id);
+            $( ".append" ).append( dict[id][0] );
+          } else {
+            for (var i = 0; i < myArray; i++){
+              if(myArray[i] == id){
+                myArray.splice(i, 1);
+                dict[id][1] = false;
+              }
+            }
+          }
+
+        } else {
+          console.log("NICE TRY");
+
+          if(dict[id][1] == true){
+            for (var i = 0; i < myArray; i++){
+              if(myArray[i] == id){
+                myArray.splice(i, 1);
+                dict[id][1] = false;
+              }
+          }
+        }
+      }
+
+    </script> -->
+
+        <script>
+      var dict = {};
+      dict['1'] = ['2&clubs;', false];
+      dict['2'] = ['2<span style="color: red">&diams;</span>', false];
+      dict['3'] = ['2<span style="color: red">&hearts;</span>', false];
+      dict['4'] = ['2&spades;', false];
+      dict['5'] = ['3&clubs;', false];
+
+      var myArray = [];
+
+
+      function print_id(id){
+        console.log(id)
+
+        if(myArray.length < 4){
+          if(dict[id][1] == false){
+            dict[id][1] = true;
+            myArray.push(id);
+            $( "#append" ).append( dict[id][0] );
+          }
+        } else {
+
+        }
+      }
+
+    </script>
+
+  </body>
+</html>
