@@ -17194,3 +17194,25 @@ pre[class*="language-"] {
   height: 100%;
   width: 50%;
 }
+
+.selected-cards {
+  font-size: 6rem;
+}
+
+.selected-cards:hover {
+  font-size: 6.0rem;
+  transition: 1s ease all;
+}
+
+#append {
+  min-height: 100px;
+  cursor: pointer;
+}
+
+/* div.owl-item {
+  width: unset !important;
+}
+
+div.owl-stage {
+  width: 5500px !important;
+} */

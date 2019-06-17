@@ -75,6 +75,13 @@
       });
     },
 
+    // $('.owl-carousel').owlCarousel({
+    //   margin:10,
+    //   loop:true,
+    //   autoWidth:true,
+    //   items:13
+    // })
+
     // Overlay Menu
     Overlay: function() {
       $(document).ready(function(){
@@ -141,7 +148,7 @@
               }
           });
       });
-      
+
       $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
         type: 'iframe',
@@ -177,8 +184,8 @@
 
 
       // skrollr
-      skrollr.init({  
-          forceHeight: false,        
+      skrollr.init({
+          forceHeight: false,
           mobileCheck: function() {
               //hack - forces mobile version to be off
               return false;
