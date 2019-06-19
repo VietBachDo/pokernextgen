@@ -30,10 +30,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Home</span></a>
+                  <a class="nav-link" href="index.html">Home</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle active" href="#" id="dropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Explore the Database
                   </a>
                   <div class="dropdown-menu" aria-labelledby="dropdown-1">
@@ -630,12 +630,26 @@
                     <div class="card-header no-border bg-white pb-0">
                     <div class="card-body">
 
-                    <div class="selected-card-title">
+                    <!-- <div class="selected-card-title">
                       Your Hand
                     </div>
                     <div class="row" id="append">
-                    </div>
-
+                    </div> -->
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="form-group row">
+                          <label for="example-number-input" class="col-2 col-form-label">Your Hand</label>
+                            <div class="col-10">
+                              <div class="input-group">
+                                <div class="row" id="append"></div>
+                                  <div class="input-group-append text-right">
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <br>
 
                       <div class="row">

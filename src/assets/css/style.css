@@ -17196,7 +17196,7 @@ pre[class*="language-"] {
 }
 
 .selected-cards {
-  height: 6rem;
+  height: 5rem;
   margin-right: 10px;
 }
 
@@ -17206,8 +17206,9 @@ pre[class*="language-"] {
 }
 
 #append {
-  min-height: 100px;
+  min-height: 80px;
   cursor: pointer;
+  flex: 1 1 auto;
 }
 
 /* div.owl-item {
