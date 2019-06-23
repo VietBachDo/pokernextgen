@@ -17196,19 +17196,82 @@ pre[class*="language-"] {
 }
 
 .selected-cards {
-  height: 5rem;
+  height: 20vh;
   margin-right: 10px;
 }
 
-.selected-cards:hover {
+/* .selected-cards:hover {
   font-size: 2rem;
   transition: 1s ease all;
-}
+} */
 
 #append {
-  min-height: 80px;
+  min-height: 50px;
   cursor: pointer;
   flex: 1 1 auto;
+}
+
+#rank-output-label {
+  text-align: center;
+}
+
+.ranking-value, .percentage-value {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .selected-cards {
+    height: 11vh;
+  }
+  #find-ranking-label {
+    height:auto;
+  }
+}
+
+@media only screen and (max-width : 375px){
+  #find-hand-label {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #find-hand-card-input {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #find-ranking-label {
+    flex: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  .selected-cards {
+    height: 8vh;
+  }
+  #container-submit-cards {
+    width: 100%;
+  }
+  #submit-cards-btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+  #append {
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  #find-ranking-card-input {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #myTabContent {
+    margin-left: 15px;
+  }
+  #rank-output-label {
+    font-size: 13px;
+  }
+  .selected-cards {
+    margin-left: 6px;
+  }
+
 }
 
 /* div.owl-item {
