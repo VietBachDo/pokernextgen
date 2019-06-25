@@ -17196,7 +17196,7 @@ pre[class*="language-"] {
 }
 
 .selected-cards {
-  height: 20vh;
+  height: 100px;
   margin-right: 10px;
 }
 
