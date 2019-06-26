@@ -17220,12 +17220,38 @@ pre[class*="language-"] {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 376px) {
   .selected-cards {
-    height: 11vh;
+    height: 9vh;
+  }
+  #find-hand-label {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #find-hand-card-input {
+    flex: 100%;
+    max-width: 100%;
   }
   #find-ranking-label {
-    height:auto;
+    flex: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  #container-submit-cards {
+    width: 100%;
+  }
+  #submit-cards-btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+  #append {
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .selected-cards {
+    padding-left: 5px;
   }
 }
 
@@ -17244,7 +17270,7 @@ pre[class*="language-"] {
     margin-left: 0px;
   }
   .selected-cards {
-    height: 8vh;
+    height: 7vh;
   }
   #container-submit-cards {
     width: 100%;
@@ -17257,6 +17283,7 @@ pre[class*="language-"] {
     padding-left: 0px;
     margin-left: 0px;
     margin-bottom: 10px;
+    margin-top: 5px;
   }
   #find-ranking-card-input {
     flex: 100%;
@@ -17270,8 +17297,41 @@ pre[class*="language-"] {
   }
   .selected-cards {
     margin-left: 6px;
+    margin-right: 6px;
   }
 
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+  #find-hand-label {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #find-hand-card-input {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #find-ranking-label {
+    flex: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  #container-submit-cards {
+    width: 100%;
+  }
+  #submit-cards-btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+  #append {
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .selected-card {
+    height: 16vh;
+  }
 }
 
 /* div.owl-item {
