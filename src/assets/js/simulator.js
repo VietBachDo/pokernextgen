@@ -91,3 +91,33 @@ function print_id(id){
     alert("You have already chosend 4 cards, please remove one");
   }
 }
+
+  function submit_hand() {
+      var x = document.getElementById("valueA")
+      var y = document.getElementById("valueB")
+      x.style.visibility = "visible";
+      y.style.visibility = "visible";
+
+      const ranking = document.querySelector(".ranking-value");
+      const percentage = document.querySelector(".percentage-value");
+
+      const rankingOdo = new Odometer({
+        el: ranking,
+        animation: 'count',
+        duration: 1000
+      })
+
+      const percentageOdo = new Odometer({
+        el: percentage,
+        animation: 'count',
+        duration: 1000
+      })
+      ranking.innerHTML = 123;
+      percentage.innerHTML = 55;
+  }
+
+  function submit_ranking() {
+    var x = document.getElementById("hand-output")
+    x.style.visibility = "visible"
+
+  }

@@ -17299,10 +17299,13 @@ pre[class*="language-"] {
     margin-left: 6px;
     margin-right: 6px;
   }
+  .col-form-label {
+    font-size: 10px;
+  }
 
 }
 
-@media (max-width: 768px) and (min-width: 376px) {
+@media (max-width: 768px){
   #find-hand-label {
     flex: 100%;
     max-width: 100%;
@@ -17329,9 +17332,18 @@ pre[class*="language-"] {
     margin-bottom: 10px;
     margin-top: 5px;
   }
-  .selected-card {
-    height: 16vh;
-  }
+}
+
+.ranking-value {
+  visibility: hidden;
+}
+
+.percentage-value {
+  visibility: hidden;
+}
+
+#hand-output {
+  visibility: hidden;
 }
 
 /* div.owl-item {
