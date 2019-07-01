@@ -130,6 +130,9 @@ function print_id(id){
             console.log(error);
           }
         })
+        if (error == null) {
+          
+        }
     console.log(url)
 
 
