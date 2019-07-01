@@ -116,8 +116,23 @@ function print_id(id){
       percentage.innerHTML = 55;
   }
 
-  function submit_ranking() {
-    var x = document.getElementById("hand-output")
-    x.style.visibility = "visible"
 
+  function submit_ranking() {
+      let value = document.getElementById('example-number-input').value
+      const url='https://pac8489nx8.execute-api.us-east-2.amazonaws.com/ngp/?type=rank&value=' + String(value)
+        $.ajax({
+          url: url,
+          type: "GET",
+          success: function(result) {
+            console.log(result);
+          },
+          error:function(error){
+            console.log(error);
+          }
+        })
+    console.log(url)
+
+
+    // var x = document.getElementById("hand-output")
+    // x.style.visibility = "visible"
   }
