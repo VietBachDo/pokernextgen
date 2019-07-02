@@ -114,25 +114,43 @@ function print_id(id){
       })
       ranking.innerHTML = 123;
       percentage.innerHTML = 55;
+      // let equity = result.body.equity
+      //console.log(equity)
+      // let hand_rank = result.body.hand_rank
+      // console.log(hand_rank)
   }
 
 
   function submit_ranking() {
       let value = document.getElementById('example-number-input').value
-      const url='https://pac8489nx8.execute-api.us-east-2.amazonaws.com/ngp/?type=rank&value=' + String(value)
+      const url='https://pac8489nx8.execute-api.us-east-2.amazonaws.com/ngp/?type=rank&value=' + String(value-1)
         $.ajax({
           url: url,
           type: "GET",
           success: function(result) {
-            console.log(result);
+            //console.log(result)
+            let equity = result.body.equity
+            console.log(equity)
+
+            let hand = result.body.hand
+            console.log(hand)
+            let splitted = hand.split("-")
+            let cardOne = splitted[0]
+            let cardTwo = splitted[1]
+            let cardThree = splitted[2]
+            let cardFour = splitted[3]
+            $( "#hand-rank-one" ).append( dict[cardOne][0] );
+            $( "#hand-rank-two" ).append( dict[cardTwo][0] );
+            $( "#hand-rank-three" ).append( dict[cardThree][0] );
+            $( "#hand-rank-four" ).append( dict[cardFour][0] );
           },
           error:function(error){
             console.log(error);
           }
         })
-        if (error == null) {
-          
-        }
+        // if (error == null) {
+        //
+        // }
     console.log(url)
 
 

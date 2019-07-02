@@ -17343,7 +17343,7 @@ pre[class*="language-"] {
 }
 
 #hand-output {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 /* div.owl-item {
