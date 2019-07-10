@@ -112,8 +112,42 @@ function print_id(id){
         animation: 'count',
         duration: 1000
       })
-      ranking.innerHTML = 123;
-      percentage.innerHTML = 55;
+
+
+      let temp_array = [parseInt(myArray[0]),parseInt(myArray[1]),parseInt(myArray[2]),parseInt(myArray[3])]
+      function sortNumber(a,b) {
+        return a - b;
+      }
+
+      temp_array.sort(sortNumber)
+      console.log(temp_array)
+      let cardOne = temp_array[0]
+      let cardTwo = temp_array[1]
+      let cardThree = temp_array[2]
+      let cardFour = temp_array[3]
+      let tempString = String(cardOne) + "-" + String(cardTwo) + "-" + String(cardThree) + "-" + String(cardFour)
+      // let tempString = "1-2-3-4"
+      const url='https://pac8489nx8.execute-api.us-east-2.amazonaws.com/ngp/?type=hand&value=' + tempString
+        $.ajax({
+          url: url,
+          type: "GET",
+          success: function(result) {
+            console.log(result)
+            let equity = result.body[0].equity
+            equity = equity.toFixed(2)
+            let rank = result.body[0].hand_rank
+            console.log(rank)
+            ranking.innerHTML = rank;
+            percentage.innerHTML = equity;
+          },
+          error:function(error){
+            console.log(error);
+          }
+        })
+
+
+
+
       // let equity = result.body.equity
       //console.log(equity)
       // let hand_rank = result.body.hand_rank
@@ -122,6 +156,10 @@ function print_id(id){
 
 
   function submit_ranking() {
+      document.getElementById("hand-rank-one").innerHTML = ""
+      document.getElementById("hand-rank-two").innerHTML = ""
+      document.getElementById("hand-rank-three").innerHTML = ""
+      document.getElementById("hand-rank-four").innerHTML = ""
       let value = document.getElementById('example-number-input').value
       const url='https://pac8489nx8.execute-api.us-east-2.amazonaws.com/ngp/?type=rank&value=' + String(value-1)
         $.ajax({
@@ -135,10 +173,15 @@ function print_id(id){
             let hand = result.body.hand
             console.log(hand)
             let splitted = hand.split("-")
-            let cardOne = splitted[0]
-            let cardTwo = splitted[1]
-            let cardThree = splitted[2]
-            let cardFour = splitted[3]
+            function sortNumberTwo(a,b) {
+              b - a;
+            }
+            let temp_array = [splitted[0],splitted[1],splitted[2],splitted[3]]
+            temp_array.sort(sortNumberTwo)
+            let cardOne = temp_array[0]
+            let cardTwo = temp_array[1]
+            let cardThree = temp_array[2]
+            let cardFour = temp_array[3]
             $( "#hand-rank-one" ).append( dict[cardOne][0] );
             $( "#hand-rank-two" ).append( dict[cardTwo][0] );
             $( "#hand-rank-three" ).append( dict[cardThree][0] );

@@ -17200,6 +17200,10 @@ pre[class*="language-"] {
   margin-right: 10px;
 }
 
+.selected-cards:hover {
+  opacity: 0.5
+}
+
 /* .selected-cards:hover {
   font-size: 2rem;
   transition: 1s ease all;
