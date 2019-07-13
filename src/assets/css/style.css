@@ -17253,6 +17253,10 @@ pre[class*="language-"] {
   padding: 0px;
 }
 
+.table-header {
+  text-align: center;
+}
+
 @media only screen and (max-width: 768px) and (min-width: 376px) {
   .selected-cards {
     height: 9vh;
