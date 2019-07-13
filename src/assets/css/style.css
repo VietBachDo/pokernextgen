@@ -17204,6 +17204,22 @@ pre[class*="language-"] {
   opacity: 0.5
 }
 
+#find-ranking-label {
+  margin: auto;
+}
+
+#hand-rank-one, #hand-rank-two, #hand-rank-three, #hand-rank-four {
+  padding: 0px;
+}
+
+#hand-rank-equity-text {
+  text-align: center;
+  margin: auto;
+  visibility: hidden;
+}
+
+
+
 /* .selected-cards:hover {
   font-size: 2rem;
   transition: 1s ease all;
@@ -17222,6 +17238,19 @@ pre[class*="language-"] {
 .ranking-value, .percentage-value {
   font-size: 25px;
   font-weight: bold;
+}
+
+.odometer-inside {
+  display: inline;
+}
+
+#hand-rank-equity-label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 0px;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 376px) {
@@ -17274,7 +17303,7 @@ pre[class*="language-"] {
     margin-left: 0px;
   }
   .selected-cards {
-    height: 7vh;
+    height: 12vh;
   }
   #container-submit-cards {
     width: 100%;
@@ -17306,7 +17335,19 @@ pre[class*="language-"] {
   .col-form-label {
     font-size: 10px;
   }
-
+  #hand-rank-equity-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  #hand-rank-one, #hand-rank-two, #hand-rank-three, #hand-rank-four {
+    flex: 1 0 16.66667%;
+    max-width: 90%;
+  }
+  #find-hand-equity-btn {
+    width: 40%;
+  }
 }
 
 @media (max-width: 768px){

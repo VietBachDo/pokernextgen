@@ -51,6 +51,60 @@ dict['49'] = ['<img class="selected-cards" src="assets/imgs/cards/ace_of_clubs.p
 dict['50'] = ['<img class="selected-cards" src="assets/imgs/cards/ace_of_diamonds.png" selected-card-id="50" onClick="print_id(50)" style="color: red; ">', false];
 dict['51'] = ['<img class="selected-cards" src="assets/imgs/cards/ace_of_hearts.png" selected-card-id="51" onClick="print_id(51)" style="color: red; ">', false];
 dict['52'] = ['<img class="selected-cards" src="assets/imgs/cards/ace_of_spades.png" selected-card-id="52" onClick="print_id(52)">', false];
+dict['53'] = ['<img class="selected-cards" src="assets/imgs/cards/2_of_clubs.png">'];
+dict['54'] = ['<img class="selected-cards" src="assets/imgs/cards/2_of_diamonds.png" style="color: red; ">'];
+dict['55'] = ['<img class="selected-cards" src="assets/imgs/cards/2_of_hearts.png" style="color: red; ">'];
+dict['56'] = ['<img class="selected-cards" src="assets/imgs/cards/2_of_spades.png">'];
+dict['57'] = ['<img class="selected-cards" src="assets/imgs/cards/3_of_clubs.png">'];
+dict['58'] = ['<img class="selected-cards" src="assets/imgs/cards/3_of_diamonds.png" style="color: red; ">'];
+dict['59'] = ['<img class="selected-cards" src="assets/imgs/cards/3_of_hearts.png" style="color: red; ">'];
+dict['60'] = ['<img class="selected-cards" src="assets/imgs/cards/3_of_spades.png" ">'];
+dict['61'] = ['<img class="selected-cards" src="assets/imgs/cards/4_of_clubs.png" ">'];
+dict['62'] = ['<img class="selected-cards" src="assets/imgs/cards/4_of_diamonds.png" style="color: red; ">'];
+dict['63'] = ['<img class="selected-cards" src="assets/imgs/cards/4_of_hearts.png" style="color: red; ">'];
+dict['64'] = ['<img class="selected-cards" src="assets/imgs/cards/4_of_spades.png">'];
+dict['65'] = ['<img class="selected-cards" src="assets/imgs/cards/5_of_clubs.png">'];
+dict['66'] = ['<img class="selected-cards" src="assets/imgs/cards/5_of_diamonds.png" style="color: red; ">'];
+dict['67'] = ['<img class="selected-cards" src="assets/imgs/cards/5_of_hearts.png" style="color: red; ">'];
+dict['68'] = ['<img class="selected-cards" src="assets/imgs/cards/5_of_spades.png">'];
+dict['69'] = ['<img class="selected-cards" src="assets/imgs/cards/6_of_clubs.png">'];
+dict['70'] = ['<img class="selected-cards" src="assets/imgs/cards/6_of_diamonds.png" style="color: red; ">'];
+dict['71'] = ['<img class="selected-cards" src="assets/imgs/cards/6_of_hearts.png" style="color: red; ">'];
+dict['72'] = ['<img class="selected-cards" src="assets/imgs/cards/6_of_spades.png">'];
+dict['73'] = ['<img class="selected-cards" src="assets/imgs/cards/7_of_clubs.png">'];
+dict['74'] = ['<img class="selected-cards" src="assets/imgs/cards/7_of_diamonds.png" style="color: red; ">'];
+dict['75'] = ['<img class="selected-cards" src="assets/imgs/cards/7_of_hearts.png" style="color: red; ">'];
+dict['76'] = ['<img class="selected-cards" src="assets/imgs/cards/7_of_spades.png">'];
+dict['77'] = ['<img class="selected-cards" src="assets/imgs/cards/8_of_clubs.png">'];
+dict['78'] = ['<img class="selected-cards" src="assets/imgs/cards/8_of_diamonds.png" style="color: red; ">'];
+dict['79'] = ['<img class="selected-cards" src="assets/imgs/cards/8_of_hearts.png" style="color: red; ">'];
+dict['80'] = ['<img class="selected-cards" src="assets/imgs/cards/8_of_spades.png">'];
+dict['81'] = ['<img class="selected-cards" src="assets/imgs/cards/9_of_clubs.png">'];
+dict['82'] = ['<img class="selected-cards" src="assets/imgs/cards/9_of_diamonds.png" style="color: red; ">'];
+dict['83'] = ['<img class="selected-cards" src="assets/imgs/cards/9_of_hearts.png" style="color: red; ">'];
+dict['84'] = ['<img class="selected-cards" src="assets/imgs/cards/9_of_spades.png">'];
+dict['85'] = ['<img class="selected-cards" src="assets/imgs/cards/10_of_clubs.png">'];
+dict['86'] = ['<img class="selected-cards" src="assets/imgs/cards/10_of_diamonds.png" style="color: red; ">'];
+dict['87'] = ['<img class="selected-cards" src="assets/imgs/cards/10_of_hearts.png" style="color: red; ">'];
+dict['88'] = ['<img class="selected-cards" src="assets/imgs/cards/10_of_spades.png">'];
+dict['89'] = ['<img class="selected-cards" src="assets/imgs/cards/jack_of_clubs2.png">'];
+dict['90'] = ['<img class="selected-cards" src="assets/imgs/cards/jack_of_diamonds2.png" style="color: red; ">'];
+dict['91'] = ['<img class="selected-cards" src="assets/imgs/cards/jack_of_hearts2.png" style="color: red; ">'];
+dict['92'] = ['<img class="selected-cards" src="assets/imgs/cards/jack_of_spades2.png">'];
+dict['93'] = ['<img class="selected-cards" src="assets/imgs/cards/queen_of_clubs2.png">'];
+dict['94'] = ['<img class="selected-cards" src="assets/imgs/cards/queen_of_diamonds2.png" style="color: red; ">'];
+dict['95'] = ['<img class="selected-cards" src="assets/imgs/cards/queen_of_hearts2.png" style="color: red; ">'];
+dict['96'] = ['<img class="selected-cards" src="assets/imgs/cards/queen_of_spades2.png">'];
+dict['97'] = ['<img class="selected-cards" src="assets/imgs/cards/king_of_clubs2.png">'];
+dict['98'] = ['<img class="selected-cards" src="assets/imgs/cards/king_of_diamonds2.png" style="color: red; ">'];
+dict['99'] = ['<img class="selected-cards" src="assets/imgs/cards/king_of_hearts2.png" style="color: red; ">'];
+dict['100'] = ['<img class="selected-cards" src="assets/imgs/cards/king_of_spades2.png">'];
+dict['101'] = ['<img class="selected-cards" src="assets/imgs/cards/ace_of_clubs.png">'];
+dict['102'] = ['<img class="selected-cards" src="assets/imgs/cards/ace_of_diamonds.png" style="color: red; ">'];
+dict['103'] = ['<img class="selected-cards" src="assets/imgs/cards/ace_of_hearts.png" style="color: red; ">'];
+dict['104'] = ['<img class="selected-cards" src="assets/imgs/cards/ace_of_spades.png">'];
+
+
 
 var myArray = [];
 
@@ -171,7 +225,7 @@ function print_id(id){
             console.log(equity)
 
             let hand = result.body.hand
-            console.log(hand)
+
             let splitted = hand.split("-")
             function sortNumberTwo(a,b) {
               b - a;
@@ -182,10 +236,36 @@ function print_id(id){
             let cardTwo = temp_array[1]
             let cardThree = temp_array[2]
             let cardFour = temp_array[3]
+
+            cardOne = parseInt(cardOne) + 52
+            cardOne = cardOne.toString()
+            cardTwo = parseInt(cardTwo) + 52
+            cardTwo = cardTwo.toString()
+            cardThree = parseInt(cardThree) + 52
+            cardThree = cardThree.toString()
+            cardFour = parseInt(cardFour) + 52
+            cardFour = cardFour.toString()
+
             $( "#hand-rank-one" ).append( dict[cardOne][0] );
             $( "#hand-rank-two" ).append( dict[cardTwo][0] );
             $( "#hand-rank-three" ).append( dict[cardThree][0] );
             $( "#hand-rank-four" ).append( dict[cardFour][0] );
+
+            var y = document.getElementById("hand-rank-equity-text")
+            y.style.visibility = "visible";
+
+            const percentage = document.querySelector(".percentage-value-equity");
+
+
+            const percentageOdo = new Odometer({
+              el: percentage,
+              animation: 'count',
+              duration: 1000
+            })
+
+            percentage.innerHTML = equity;
+            percentage.append("%")
+
           },
           error:function(error){
             console.log(error);
@@ -200,3 +280,6 @@ function print_id(id){
     // var x = document.getElementById("hand-output")
     // x.style.visibility = "visible"
   }
+
+
+  

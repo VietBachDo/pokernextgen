@@ -219,45 +219,41 @@
                   <table class="table table-striped boxed">
                     <thead>
                       <tr>
-                        <th scope="col">Quartile</th>
-                        <th scope="col">card1</th>
-                        <th scope="col">card2</th>
-                        <th scope="col">card3</th>
-                        <th scope="col">card4</th>
+                        <th scope="col" id="section5-quartile-text">Quartile</th>
+                        <th scope="col">Hand</th>
                         <th scope="col">Equity</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>T<span style="color: red">&diams;</span></td>
-                        <td>T<span style="color: red">&hearts;</span></td>
-                        <td>A<span style="color: red">&diams;</span></td>
-                        <td>A<span style="color: red">&hearts;</span></td>
+                        <td>
+                          T<span style="color: red">&diams;</span>T<span style="color: red">&hearts;</span>A<span style="color: red">&diams;</span>A<span style="color: red">&hearts;</span>
+                        </td>
+                        <!-- <td></td>
+                        <td></td>
+                        <td></td> -->
                         <td>72.41%</td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>4<span style="color: red">&diams;</span></td>
-                        <td>7<span>&spades;</span></td>
-                        <td>J<span style="color: red">&diams;</span></td>
-                        <td>Q<span>&spades;</span></td>
+                        <td>
+                          4<span style="color: red">&diams;</span>7<span>&spades;</span>J<span style="color: red">&diams;</span>Q<span>&spades;</span>
+                        </td>
                         <td>51.75%</td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td>5<span>&spades;</span></td>
-                        <td>6<span>&spades;</span></td>
-                        <td>J<span>&spades;</span></td>
-                        <td>A<span>&clubs;</span></td>
+                        <td>
+                          5<span>&spades;</span>6<span>&spades;</span>J<span>&spades;</span>A<span>&clubs;</span>
+                        </td>
                         <td>47.85%</td>
                       </tr>
                       <tr>
                         <th scope="row">4</th>
-                        <td>4<span style="color: red">&diams;</span></td>
-                        <td>5<span style="color: red">&hearts;</span></td>
-                        <td>7<span style="color: red">&hearts;</span></td>
-                        <td>J<span style="color: red">&hearts;</span></td>
+                        <td>
+                          4<span style="color: red">&diams;</span>5<span style="color: red">&hearts;</span>7<span style="color: red">&hearts;</span>J<span style="color: red">&hearts;</span>
+                        </td>
                         <td>44.33%</td>
                       </tr>
                     </tbody>
@@ -294,10 +290,10 @@
                                 <thead>
                                   <tr>
                                     <th scope="col">Rank</th>
-                                    <th scope="col">card1</th>
-                                    <th scope="col">card2</th>
-                                    <th scope="col">card3</th>
-                                    <th scope="col">card4</th>
+                                    <th scope="col">c-1</th>
+                                    <th scope="col">c-2</th>
+                                    <th scope="col">c-3</th>
+                                    <th scope="col">c-4</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -601,10 +597,10 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                           <div class="form-group row">
                             <label for="example-number-input" class="col-2 col-form-label" id="find-hand-label">Rank</label>
-                              <div class="col-10" id="find-hand-card-input">
+                              <div class="col-12" id="find-hand-card-input">
                                 <div class="input-group">
                                   <input class="form-control" type="number" value="42" id="example-number-input">
-                                    <div class="input-group-append">
+                                    <div class="input-group-append" id="find-hand-equity-btn">
                                       <button type="button" class="btn btn-primary" onclick="submit_ranking()">Submit</button>
                                     </div>
                                 </div>
@@ -613,13 +609,19 @@
                           </div>
                         </div>
                         <div class="row" id="hand-output">
-                          <div class="col-3" id="hand-rank-one">
+                          <div class="col-2" id="hand-rank-one">
                           </div>
-                          <div class="col-3" id="hand-rank-two">
+                          <div class="col-2" id="hand-rank-two">
                           </div>
-                          <div class="col-3" id="hand-rank-three">
+                          <div class="col-2" id="hand-rank-three">
                           </div>
-                          <div class="col-3" id="hand-rank-four">
+                          <div class="col-2" id="hand-rank-four">
+                          </div>
+                          <div class="col-4" id="hand-rank-equity-text">
+                            <label class="col-form-label" id="hand-rank-equity-label">Equity: </label>
+                            <span class="ranking-output">
+                              <span class="percentage-value-equity" id="hand-rank-percentage">&nbsp;43.43%</span>
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -639,7 +641,7 @@
                 <div class="col">
                   <div class="card">
                     <div class="card-header no-border bg-white pb-0" id="card-body-padding">
-                    <div class="card-body" >
+                    <div class="card-body" style="padding:0px">
 
                     <!-- <div class="selected-card-title">
                       Your Hand
@@ -649,7 +651,7 @@
                     <div class="tab-content" id="myTabContent">
                       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="form-group row">
-                          <label for="example-number-input" class="col-2 col-form-label" id="find-ranking-label">Your Hand</label>
+                          <label for="example-number-input" class="col-2 col-form-label" id="find-ranking-label">Hand</label>
                             <div class="col-10" id="find-ranking-card-input">
                               <div class="input-group">
                                 <div class="row" id="append"></div>
@@ -664,13 +666,13 @@
                       <div class="row" id="rank-output-label">
                         <div class="col-6">
                           <label class="col-form-label">Rank</label>
-                          <div class="ranking-output">#<span class="ranking-value" id="valueA">0</span>
+                          <div class="ranking-output"><span class="ranking-value" id="valueA">0</span>
                           </div>
                         </div>
                         <div class="col-6">
                           <label class="col-form-label">Equity</label>
                           <div class="ranking-output">
-                            <span class="percentage-value" id="valueB">0</span>%
+                            <span class="percentage-value" id="valueB">0</span>
                           </div>
                         </div>
                       </div>
@@ -1163,5 +1165,20 @@
 
         <script src="assets/js/simulator.js"></script>
         <script src="assets/js/odometer.js"></script>
+        <script>
+        function mobileUpdate(windowSizeUpdate) {
+          if (windowSizeUpdate.matches) {
+            $("#section5-quartile-text").text("Q")
+            alert("SMALL");
+          } else {
+            $("#section5-quartile-text").text("Quartile")
+            alert("BIG");
+          }
+        }
+          let windowSizeUpdate = window.matchMedia("(max-width: 375px)")
+          mobileUpdate(windowSizeUpdate)
+          windowSizeUpdate.addListener(mobileUpdate)
+        //$("#section5-quartile-text").text("XXXXXX")
+        </script>
   </body>
 </html>
