@@ -17209,7 +17209,7 @@ pre[class*="language-"] {
 }
 
 #hand-rank-one, #hand-rank-two, #hand-rank-three, #hand-rank-four {
-  padding: 0px;
+  padding-right: 0px;
 }
 
 #hand-rank-equity-text {
@@ -17257,6 +17257,23 @@ pre[class*="language-"] {
   text-align: center;
 }
 
+#hand-output {
+  padding-bottom: 25px;
+}
+
+#submit_hand_frame {
+  padding-bottom: 25px;
+}
+
+#section-5 .row .col table tbody tr td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#section-5 .row .col table tbody tr td span {
+  padding-right: 10px;
+}
+
 @media only screen and (max-width: 768px) and (min-width: 376px) {
   .selected-cards {
     height: 9vh;
@@ -17290,6 +17307,8 @@ pre[class*="language-"] {
   .selected-cards {
     padding-left: 5px;
   }
+
+
 }
 
 @media only screen and (max-width : 375px){

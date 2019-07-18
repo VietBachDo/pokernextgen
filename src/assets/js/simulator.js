@@ -107,7 +107,8 @@ dict['104'] = ['<img class="selected-cards" src="assets/imgs/cards/ace_of_spades
 
 
 var myArray = [];
-
+let percent_count_ranking = 0
+let percent_count_hand = 0
 
 function print_id(id){
   if(myArray.length < 4 && dict[id][1] == false){
@@ -192,7 +193,13 @@ function print_id(id){
             let rank = result.body[0].hand_rank
             console.log(rank)
             ranking.innerHTML = rank;
-            percentage.innerHTML = equity;
+              if (percent_count_hand < 1) {
+              percentage.innerHTML = equity;
+              percentage.append("%")
+              percent_count_hand++
+            } else {
+              percentage.innerHTML = equity
+            }
           },
           error:function(error){
             console.log(error);
@@ -237,6 +244,7 @@ function print_id(id){
             let cardThree = temp_array[2]
             let cardFour = temp_array[3]
 
+
             cardOne = parseInt(cardOne) + 52
             cardOne = cardOne.toString()
             cardTwo = parseInt(cardTwo) + 52
@@ -262,10 +270,14 @@ function print_id(id){
               animation: 'count',
               duration: 1000
             })
+              if(percent_count_ranking < 1) {
+              percentage.innerHTML = equity;
+              percentage.append("%")
+              percent_count_ranking++
+            } else {
+              percentage.innerHTML = equity;
 
-            percentage.innerHTML = equity;
-            percentage.append("%")
-
+            }
           },
           error:function(error){
             console.log(error);
@@ -280,6 +292,3 @@ function print_id(id){
     // var x = document.getElementById("hand-output")
     // x.style.visibility = "visible"
   }
-
-
-  
