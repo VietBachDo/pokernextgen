@@ -198,7 +198,7 @@
 
             <!-- graph -->
             <section id="section-4">
-              <h2 class="section-title">A Graph <a data-scroll href="#section-2" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <h2 class="section-title">A Graph <a data-scroll href="#section-4" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
               <p>The vertical red lines divide the chart into quartiles. These results are rather interesting as they appear to be a linear trasformation
                 of a <a href="https://en.wikipedia.org/wiki/Logistic_function" target="_blank">logistic curve</a>, something found throughout the natural world.</p>
               <br>
@@ -211,7 +211,7 @@
 
             <!-- table -->
             <section id="section-5">
-              <h2 class="section-title">Results From Each Quartile <a data-scroll href="#section-4" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <h2 class="section-title">Results From Each Quartile <a data-scroll href="#section-5" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
               <p>The worst hand we tested was 2<span>&clubs;</span> - 2<span style="color: red">&diams;</span> - 2<span style="color: red">&hearts;</span> - 2<span>&spades;</span>
               And the top hand from each quartile.</p>
               <div class="row">
@@ -263,7 +263,7 @@
 
             <!-- accordion -->
             <section id="section-6">
-              <h2 class="section-title">The Best, and the Worst <a data-scroll href="#section-5" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <h2 class="section-title">The Best, and the Worst <a data-scroll href="#section-6" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
               <p>And the 10 hands in the middle.  The 10 best hands all have PF equity greater than 70% vs a random hand.  The hands in the middle are all a little worse than a coin flip vs a random hand.  And the 10 worst hands can expect to lose more than 70% of the time.</p>
               <p>Here some interesting patterns emerge.  Double suited aces with a JJ or TT are the nuts.  Low quads and trip dueces with a mid
                 rank rainbow are the worst.  The worst hands are significantly worst than the best hands are good.
@@ -274,7 +274,7 @@
                     <div class="card">
                       <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
-                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <button class="btn btn-link collapseTable"  onclick="expandTable()" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             The 10 Best
                           </button>
                         </h5>
@@ -286,7 +286,7 @@
                               <table class="table table-striped boxed" style="text-align: center">
                                 <thead class="table-header">
                                   <tr>
-                                    <th scope="col">Rank</th>
+                                    <th class="section-6-rank" scope="col">Rank</th>
                                     <th scope="col">Hand</th>
                                   </tr>
                                 </thead>
@@ -361,7 +361,7 @@
                     <div class="card">
                       <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
-                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <button class="btn btn-link collapseTable" id="collapseSecond" onclick="expandTable()" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             The 10 in the Middle
                           </button>
                         </h5>
@@ -373,67 +373,67 @@
                               <table class="table table-striped boxed" style="text-align: center">
                                 <thead>
                                   <tr>
-                                    <th scope="col">Rank</th>
+                                    <th class="section-6-rank" scope="col">Rank</th>
                                     <th scope="col">Hand</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <th scope="row">135358</th>
+                                    <th scope="row">135,358</th>
                                     <td>
                                       4<span >&clubs;</span>6<span>&spades;</span>T<span style="color: red">&diams;</span>J<span>&clubs;</span>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">135359</th>
+                                    <th scope="row">135,359</th>
                                     <td>
                                       4<span>&clubs;</span>9<span style="color: red">&diams;</span>Q<span>&clubs;</span>K<span>&spades;</span>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">135360</th>
+                                    <th scope="row">135,360</th>
                                     <td>
                                       6<span style="color: red">&hearts;</span>7<span>&clubs;</span>T<span>&spades;</span>K<span style="color: red">&diams;</span>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">135361</th>
+                                    <th scope="row">135,361</th>
                                     <td>
                                       7<span style="color: red">&hearts;</span>9<span style="color: red">&diams;</span>T<span>&clubs;</span>J<span>&spades;</span>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">135362</th>
+                                    <th scope="row">135,362</th>
                                     <td>
                                       5<span>&spades;</span>6<span>&spades;</span>J<span>&spades;</span>A<span>&clubs;</span>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">135363</th>
+                                    <th scope="row">135,363</th>
                                     <td>
                                       4<span>&spades;</span>9<span>&spades;</span>J<span>&spades;</span>A<span>&clubs;</span>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">135364</th>
+                                    <th scope="row">135,364</th>
                                     <td>
                                       3<span style="color: red">&diams;</span>4<span style="color: red">&diams;</span>7<span style="color: red">&diams;</span>7<span style="color: red">&hearts;</span>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">135365</th>
+                                    <th scope="row">135,365</th>
                                     <td>
                                       2<span style="color: red">&hearts;</span>9<span>&spades;</span>H<span style="color: red">&diams;</span>K<span>&spades;</span>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">135366</th>
+                                    <th scope="row">135,366</th>
                                     <td>
                                       3<span style="color: red">&diams;</span>3<span style="color: red">&hearts;</span>6<span style="color: red">&hearts;</span>K<span style="color: red">&diams;</span>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">135367</th>
+                                    <th scope="row">135,367</th>
                                     <td>
                                       2<span>&clubs;</span>8<span>&hearts;</span>J<span>&spades;</span>A<span>&spades;</span>
                                     </td>
@@ -448,7 +448,7 @@
                     <div class="card">
                       <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <button class="btn btn-link collapsed collapseTable" id="collapseThird" onclick="expandTable()" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             The 10 Worst
                           </button>
                         </h5>
@@ -460,7 +460,7 @@
                               <table class="table table-striped boxed" style="text-align: center">
                                 <thead>
                                   <tr>
-                                    <th scope="col">Rank</th>
+                                    <th class="section-6-rank" scope="col">Rank</th>
                                     <th scope="col">Hand</th>
                                   </tr>
                                 </thead>
@@ -544,7 +544,7 @@
               -form validation
                 -numbers should not be < 1 or > 270725 -->
             <section id="section-7">
-              <h2 class="section-title">Find a Hand <a data-scroll href="#section-6" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <h2 class="section-title">Find a Hand <a data-scroll href="#section-7" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
               <p>Enter a ranking, an integer greater than 0 and less than 270,726 and the site will return the corresponding hand</p>
               <div class="row">
                 <div class="col">
@@ -592,7 +592,7 @@
 
 
             <section id="section-8">
-              <h2 class="section-title">Find a Ranking <a data-scroll href="#section-7" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <h2 class="section-title">Find a Ranking <a data-scroll href="#section-8" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
               <p>Enter a hand and we will return its ranking.</p>
 
               <div class="row">
@@ -969,7 +969,7 @@
 
             <!-- Texas Hold'Em -->
             <section id="section-9">
-              <h2 class="section-title">Texas Hold'Em Database <a data-scroll href="#section-6" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
+              <h2 class="section-title">Texas Hold'Em Database <a data-scroll href="#section-9" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
               <p>This is the next major simulation that we plan on running.  We will test each of the 1,326 starting hands in Texas Hold'Em 10,000
               times which, assuming an even sampling, should explore the entire hand space more than 7.5 times.</p>
             </section>
@@ -1130,6 +1130,21 @@
           } else {
             $("#section5-quartile-text").text("Quartile")
           }
+        }
+        // $("#first_collapse").change(animateCollapse() {
+        //   alert("hello")
+        // });
+        function expandTable() {
+
+          $('.myClass').on('click', function() {
+
+          });
+           if ($("#collapseFirst").attr("aria-expanded") === false &&
+               $("#collapseSecond").attr("aria-expanded") === false &&
+               $("#collapseThird").attr("aria-expanded") === false) {
+                 $("#collapseFirst").css("text-align", "center");
+                 $("#collapseFirst").css("transition", "1s");
+               }
         }
           let windowSizeUpdate = window.matchMedia("(max-width: 375px)")
           mobileUpdate(windowSizeUpdate)

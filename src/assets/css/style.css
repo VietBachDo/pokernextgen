@@ -17274,6 +17274,14 @@ pre[class*="language-"] {
   padding-right: 10px;
 }
 
+#section-6 .row .col table tbody tr td span {
+  padding-right: 10px;
+}
+
+.section-6-rank {
+  width: 50%;
+}
+
 @media only screen and (max-width: 768px) and (min-width: 376px) {
   .selected-cards {
     height: 9vh;
