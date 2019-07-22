@@ -17209,7 +17209,13 @@ pre[class*="language-"] {
 }
 
 #hand-rank-one, #hand-rank-two, #hand-rank-three, #hand-rank-four {
+  padding-left: 10px;
   padding-right: 0px;
+}
+
+#hand-output {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #hand-rank-equity-text {
@@ -17281,6 +17287,7 @@ pre[class*="language-"] {
 .section-6-rank {
   width: 50%;
 }
+
 
 @media only screen and (max-width: 768px) and (min-width: 376px) {
   .selected-cards {

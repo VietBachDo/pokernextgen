@@ -23,7 +23,7 @@
         <div class="row">
           <nav class="navbar navbar-expand-lg navbar-dark" >
             <!-- nav bar logo -->
-            <a href="" class="navbar-brand"><img id="navbarLogo"src="assets/imgs/nextgen-poker.svg" alt="Logo"></a>
+            <a href="index.html" class="navbar-brand"><img id="navbarLogo"src="assets/imgs/nextgen-poker.svg" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -274,12 +274,12 @@
                     <div class="card">
                       <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
-                          <button class="btn btn-link collapseTable"  onclick="expandTable()" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <button class="btn btn-link collapseTable" onclick="firstCollapsing()" id="collapseFirst" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             The 10 Best
                           </button>
                         </h5>
                       </div>
-                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div  id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
                           <div class="row">
                             <div class="col">
@@ -361,7 +361,7 @@
                     <div class="card">
                       <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
-                          <button class="btn btn-link collapseTable" id="collapseSecond" onclick="expandTable()" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <button class="btn btn-link collapseTable" onclick="secondCollapsing()" id="collapseSecond" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             The 10 in the Middle
                           </button>
                         </h5>
@@ -448,7 +448,7 @@
                     <div class="card">
                       <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
-                          <button class="btn btn-link collapsed collapseTable" id="collapseThird" onclick="expandTable()" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <button class="btn btn-link collapsed" onclick="thirdCollapsing()" id="collapseThird" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             The 10 Worst
                           </button>
                         </h5>
@@ -1131,21 +1131,48 @@
             $("#section5-quartile-text").text("Quartile")
           }
         }
-        // $("#first_collapse").change(animateCollapse() {
-        //   alert("hello")
-        // });
-        function expandTable() {
 
-          $('.myClass').on('click', function() {
-
-          });
-           if ($("#collapseFirst").attr("aria-expanded") === false &&
-               $("#collapseSecond").attr("aria-expanded") === false &&
-               $("#collapseThird").attr("aria-expanded") === false) {
-                 $("#collapseFirst").css("text-align", "center");
-                 $("#collapseFirst").css("transition", "1s");
-               }
+        function firstCollapsing(){
+          if($("#collapseFirst").attr("aria-expanded") == "false") {
+            document.getElementById("collapseFirst").style.textAlign = "center"
+            document.getElementById("collapseSecond").style.textAlign = "left"
+            document.getElementById("collapseThird").style.textAlign = "left"
+            document.getElementById("collapseFirst").style.transition = "width 1s ease"
+            document.getElementById("collapseSecond").style.transition = "width 1s ease"
+            document.getElementById("collapseThird").style.transition = "width 1s ease"
+            // $("collapseFirst").css("transition", "1s");
+            // $("collapseFirst").css("transition-timing-function" , "ease-out");
+          } else if($("#collapseFirst").attr("aria-expanded") == "true") {
+            document.getElementById("collapseFirst").style.textAlign = "left"
+          }
         }
+
+        function secondCollapsing() {
+          if($("#collapseSecond").attr("aria-expanded") == "false") {
+            document.getElementById("collapseSecond").style.textAlign = "center"
+            document.getElementById("collapseFirst").style.textAlign = "left"
+            document.getElementById("collapseThird").style.textAlign = "left"
+            // $("collapseFirst").css("transition", "1s");
+            // $("collapseFirst").css("transition-timing-function" , "ease-out");
+          } else if($("#collapseSecond").attr("aria-expanded") == "true") {
+            document.getElementById("collapseSecond").style.textAlign = "left"
+          }
+        }
+
+        function thirdCollapsing() {
+          if($("#collapseThird").attr("aria-expanded") == "false") {
+            document.getElementById("collapseThird").style.textAlign = "center"
+            document.getElementById("collapseFirst").style.textAlign = "left"
+            document.getElementById("collapseSecond").style.textAlign = "left"
+            // $("collapseFirst").css("transition", "1s");
+            // $("collapseFirst").css("transition-timing-function" , "ease-out");
+          } else if($("#collapseThird").attr("aria-expanded") == "true") {
+            document.getElementById("collapseThird").style.textAlign = "left"
+          }
+        }
+
+
+
           let windowSizeUpdate = window.matchMedia("(max-width: 375px)")
           mobileUpdate(windowSizeUpdate)
           windowSizeUpdate.addListener(mobileUpdate)
