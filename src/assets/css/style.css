@@ -17341,7 +17341,7 @@ pre[class*="language-"] {
     margin-left: 0px;
   }
   .selected-cards {
-    height: 12vh;
+    height: 10vh;
   }
   #container-submit-cards {
     width: 100%;
@@ -17367,8 +17367,8 @@ pre[class*="language-"] {
     font-size: 13px;
   }
   .selected-cards {
-    margin-left: 6px;
-    margin-right: 6px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
   .col-form-label {
     font-size: 10px;
