@@ -17425,9 +17425,24 @@ pre[class*="language-"] {
   visibility: hidden;
 }
 
+@media only screen and (max-width : 375px) {
+  .animation-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align:justify;
+  }
+  .animation-image {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 50px;
+  }
+}
+
 #hand-output {
   /* visibility: hidden; */
 }
+
+
 
 /* div.owl-item {
   width: unset !important;
